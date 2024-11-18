@@ -1,0 +1,46 @@
+Here are the data sources for the project, covering both GPS tracking and environmental data:
+
+1. GPS Tracking Data
+
+Use animal GPS tracking datasets from open sources:
+
+	•	Movebank Animal Tracking Data:
+	•	Free to access after registration.
+	•	Contains GPS data for various species, including timestamps, latitude, longitude, and additional metadata.
+	•	Example dataset: African Buffalo Tracking Data.
+
+2. Environmental Data
+
+a. Vegetation Data
+
+	•	MODIS Vegetation Indices (NDVI):
+	•	Source: NASA MODIS.
+	•	Data includes normalized difference vegetation index (NDVI) for analyzing plant health and vegetation cover.
+	•	Format: GeoTIFF or HDF.
+
+b. Weather Data
+
+	•	NOAA Weather Data:
+	•	Source: NOAA Climate Data Online (CDO).
+	•	Contains temperature, precipitation, and other weather variables by location and time.
+	•	Can be downloaded via the NOAA API.
+
+c. Topographic Data
+
+	•	NASA Earthdata SRTM (Shuttle Radar Topography Mission):
+	•	Source: NASA Earthdata.
+	•	Provides high-resolution elevation data for analyzing terrain.
+
+d. Precipitation Data
+
+	•	Global Precipitation Measurement (GPM):
+	•	Source: NASA GPM Data Portal.
+	•	Includes rainfall data at various time intervals, available via API.
+
+3. Integration Strategy
+
+	•	Step 1: Download or fetch GPS tracking data from Movebank.
+	•	Step 2: Use APIs or bulk download tools to fetch satellite data (NDVI, weather, etc.) from NASA or NOAA.
+	•	Step 3: Store raw data in the data/raw/ folder in formats such as CSV, GeoJSON, or GeoTIFF.
+
+Would you like assistance with scripts for automating data downloads using APIs?
